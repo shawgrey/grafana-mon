@@ -60,7 +60,7 @@ ExecStart=/usr/local/bin/node_exporter
 [Install]
 WantedBy=multi-user.target
 ```
-Reload teh daemon and start node_exporter service
+Reload the daemon and start node_exporter service
 ```
 systemctl daemon-reload
 systemctl start node_exporter
