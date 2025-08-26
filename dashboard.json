@@ -12,7 +12,7 @@
         "iconColor": "rgba(0, 211, 255, 1)",
         "name": "Annotations & Alerts",
         "target": {
-          "limit": 100,a
+          "limit": 100,
           "matchAny": false,
           "tags": [],
           "type": "dashboard"
@@ -465,7 +465,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "Local Serverrs",
+  "title": "Local Servers",
   "uid": "22e6d07c-89f3-4c69-8fe9-38ee8bd3ec3f",
-  "version": 8
+  "version": 9
 }
