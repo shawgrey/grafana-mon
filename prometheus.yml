@@ -1,0 +1,37 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]                                                                                                                         
+  
+  # Node Exporter for root space monitoring
+  - job_name: "root_space"
+    static_configs:
+      - targets:
+          - "192.168.108.19:9100"
+          - "192.168.108.221:9100"
+          - "192.168.108.39:9100"
+
+  # Node Exporter for memory usage monitoring
+  - job_name: "mem_usage"
+    static_configs:
+      - targets:
+          - "192.168.108.19:9100"
+          - "192.168.108.221:9100"
+          - "192.168.108.39:9100"
+
+  # Node Exporter for 1-minute load average
+  - job_name: "load_average"
+    static_configs:
+      - targets:
+          - "192.168.108.19:9100"
+          - "192.168.108.221:9100"
+          - "192.168.108.39:9100"
